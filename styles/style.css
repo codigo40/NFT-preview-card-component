@@ -32,11 +32,15 @@ body {
 .main__container{
   width: 22rem;
   background-color:var(--VeryDarkBlueCardBG) ;
-  padding: 2rem;
-  border-radius: 1.5rem;
+  padding: 1.8rem;
+  border-radius: 1rem;
 }
 .main__image{
-  width: 18rem;
+  border: red solid 2px;
+  border-radius: .5rem;
+  width: 18.2rem;
+  height: 19rem;
+  margin-bottom: 1rem;
 }
 .main__title{
   color: var(--White);
@@ -47,11 +51,11 @@ body {
   color: var(--SoftBlue);
   font-size: var(--fontSize);
   line-height: 1.7rem;
-  margin-bottom: ;
+  margin-bottom: 1.4rem;
+
 }
 
 .main__priceDetails{
-  border: red solid 2px;
 display: flex;
 justify-content: space-between;
 }
@@ -62,4 +66,32 @@ justify-content: space-between;
 
 .main__time{
   color: var(--SoftBlue);
+}
+
+.main__line{
+width: 100%;
+  border-top: 1px solid var(--VeryDarkBlueLine);
+  margin-top: 1.6rem;
+}
+
+.main__author{
+  display: flex;
+  align-items: center;
+  margin-top: .8rem;
+}
+.main__authorPicture{
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 2.2rem;
+}
+.main__creation{
+  color: var(--SoftBlue);
+  margin-left: .8rem;
+
+}
+
+.main__name{
+color: var(--White);
+margin-left: .5rem;
+font-weight: 100;
 }

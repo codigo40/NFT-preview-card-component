@@ -1,6 +1,6 @@
 # Frontend Mentor - NTF Preview Card Component
 
-A responsive card for the NTF Equilibrium, built using HTML and CSS. The card have a section that introduces the NTF to the clieny. This project was completed as part of the Frontend Mentor challenges.
+A responsive card for the NTF Equilibrium, built using HTML and CSS. The card have a section that introduces the NTF to the client. This project was completed as part of the Frontend Mentor challenges.
 
 ![NFT Preview Card Component](./images/1.png)
 

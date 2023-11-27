@@ -35,24 +35,31 @@ body {
   padding: 1.8rem;
   border-radius: 1rem;
 }
-.main__image{
-  border: red solid 2px;
-  border-radius: .5rem;
+
+.main__imgContainer{
   width: 18.2rem;
   height: 19rem;
   margin-bottom: 1rem;
+  position: relative;
 }
+
+.main__image{
+width: 100%;
+height: 100%;
+border-radius: .5rem;
+}
+
 .main__title{
   color: var(--White);
   font-size: 1.35rem;
   margin-bottom: 1rem;
 }
+
 .main__paragraph{
   color: var(--SoftBlue);
   font-size: var(--fontSize);
   line-height: 1.7rem;
   margin-bottom: 1.4rem;
-
 }
 
 .main__priceDetails{
@@ -79,15 +86,16 @@ width: 100%;
   align-items: center;
   margin-top: .8rem;
 }
+
 .main__authorPicture{
   border: 2px white solid;
   border-radius: 50%;
   width: 2.2rem;
 }
+
 .main__creation{
   color: var(--SoftBlue);
   margin-left: .8rem;
-
 }
 
 .main__name{
@@ -95,3 +103,70 @@ color: var(--White);
 margin-left: .5rem;
 font-weight: 100;
 }
+
+/* ACTIVE STATES */
+.view {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+border-radius: .5rem;
+}
+.view:hover{
+  background-color: hsl(178, 100%, 50%, 0.4);
+}
+
+.viewIcon{
+ opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.viewIcon:hover {
+opacity: 1;
+
+}
+
+.main__title:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.main__name:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+/* MEDIA QUERY */
+
+
+@media only screen and (max-width:768px) {
+  .main__container{
+    width: 20rem;
+    padding: 1.3rem;
+  }
+  .main__imgContainer{
+    width: 17.2rem;
+    height: 17rem;
+    margin-bottom: 1.5rem;
+  }
+  .main__title{
+    margin-bottom: .6rem;
+  }
+
+  .main__paragraph{
+   font-size: .9rem;
+   letter-spacing: 1px;  
+   margin-bottom: .9rem;
+  }
+
+  .main__line{
+    margin-top: 1.4rem;
+  }
+  .main__author{
+margin-top: .3rem;
+  }
+}
+  
